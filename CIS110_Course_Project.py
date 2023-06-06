@@ -1,11 +1,21 @@
-print("Hello, I have a great story about my dog.")
+prin("Hello, I have a great story about my dog.")
 print("I have a few questions that you must answer first.")
 print("After you answer the question type any key.")
 location = input("Where should Astro be exploring: ")
+while len(location) == 0:
+    location = input(f"Doggyland: ")
 obstacle = input("What pbstacle should Astro encounter in his adventure: ")
+while len(obstacle) == 0:
+    obstacle = input(f"log: ")
 breed = input("\nWhat breed is Astro: ")
+while len(breed) == 0:
+    breed = input(f"doberman: ")
 reward = input("What should Astro find at the end of his adventure: ")
+while len(reward) == 0:
+    reward = input(f"dogTreats: ")
 logstability = input("Should the log Astro find be stable or unstable: ")
+while len(logstability) == 0:
+    logstability = input(f"unstable: ")
 print(f"\nOnce upon a time there was a dog {breed}. ")
 print(f"While walking in the {location} he came across a {obstacle}. ")
 print(f"While in the {location} he will get a {reward} when he leaves. ")
